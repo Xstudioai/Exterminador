@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,11 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        
+
         :root {
             --brand-orange: #FF8C00;
+            --social-icon-bg: #1a1a1a;
+            --social-icon-color: #ffffff;
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background-color: #000000;
@@ -66,6 +67,29 @@
                 box-shadow: 0 0 5px var(--brand-orange), 0 0 10px var(--brand-orange);
             }
         }
+
+        /* Estilos de los iconos de redes sociales */
+        .social-icon-container {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: var(--social-icon-bg);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .social-icon-container:hover {
+            box-shadow: 0 0 10px var(--brand-orange), 0 0 20px var(--brand-orange), 0 0 30px var(--brand-orange);
+        }
+
+        .social-icon {
+            color: var(--social-icon-color);
+            width: 24px;
+            height: 24px;
+        }
     </style>
 </head>
 <body class="bg-black p-8 md:p-16 text-gray-100">
@@ -94,7 +118,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡14.500</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Cucarachicida%20Gal%C3%B3n%203785%20ML%20%2B%20Cebo%20en%20Jeringa%2060%20GRAMOS%20(%E2%82%A114.500)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -107,7 +131,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡29.900</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Cucarachicida%20Gal%C3%B3n%203785%20ML%20%2B%20Cebo%20en%20Jeringa%2060%20GRAMOS%20%2B%20Fumigadora%20de%20Espalda%20de%2016%20Litros%20(%E2%82%A129.900)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -120,7 +144,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡4.900</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Cucarachicida%20Botella%20150%20ML%20(%E2%82%A14.900)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -133,7 +157,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡10.000</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Cebo%20en%20Envase%20200%20Gramos%20(%E2%82%A110.000)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -146,7 +170,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡11.500</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Cucarachicida%20Botella%20150%20ML%20%2B%20Cebo%20en%20Jeringa%2060%20GRAMOS%20(%E2%82%A111.500)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -159,7 +183,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡7.500</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20la%20Jeringa%2060%20Gramos%20(%E2%82%A17.500)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -172,7 +196,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡18.900</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20paquete%20de%206%20Cebos%20en%20Pasta%20de%2010%20Gramos%20%2B%203%20Porta%20Cebo%20(%E2%82%A118.900)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -185,7 +209,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡12.000</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Set%20de%2012%20Porta%20Cebos%20para%20Veneno%20en%20Gel%20(%E2%82%A112.000)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -205,7 +229,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡1.000</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Cebo%20Parafinado%20Rata%20Grande%20(%E2%82%A11.000)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -218,7 +242,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡1.500</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Cebo%20Especial%20Exterminador%20Plus%20(%E2%82%A11.500)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -231,7 +255,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">2 x ₡15.500</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Cebadero%20Rat%C3%B3n%20Casero%20(2%20x%20%E2%82%A115.500)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -244,7 +268,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡8.000</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Cebadero%20Roedores%20Medianos%20(%E2%82%A18.000)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -257,7 +281,7 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡12.500</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20el%20Cebadero%20Rata%20Grande%20(%E2%82%A112.500)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
 
@@ -272,16 +296,40 @@
                 <div class="mt-4">
                     <span class="text-sm font-semibold text-gray-500">Precio:</span>
                     <p class="price">₡14.500</p>
-                    <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20la%20Trampa%20Rata%20Silvestre%20(%E2%82%A114.500)" target="_blank" class="btn w-full mt-4 text-center block">Comprar Ahora</a>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
                 </div>
             </div>
-
         </main>
 
         <footer class="text-center mt-12 text-gray-400">
-            <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20para%20el%20control%20de%20plagas." target="_blank" class="text-gray-400 hover:text-orange transition-colors duration-300">
+            <!-- Contacto -->
+            <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20sus%20productos%20para%20el%20control%20de%20plagas." target="_blank" class="text-gray-400 hover:text-orange transition-colors duration-300">
                 <p>CONTÁCTANOS: 7223-4104</p>
             </a>
+            <!-- Iconos de redes sociales -->
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.facebook.com/profile.php?id=61573863002331" target="_blank" aria-label="Facebook">
+                    <div class="social-icon-container">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c-.312 0-3.618-.016-4.872.072-1.57.07-2.61.34-3.545.717-.912.38-1.638.995-2.365 1.722-.727.727-1.342 1.453-1.722 2.365-.377.935-.647 1.975-.717 3.545-.056 1.258-.072 1.668-.072 4.872s.016 3.614.072 4.872c.07 1.57.34 2.61.717 3.545.38.912.995 1.638 1.722 2.365.727.727 1.453 1.342 2.365 1.722.935.377 1.975.647 3.545.717 1.258.056 1.668.072 4.872.072s3.614-.016 4.872-.072c1.57-.07 2.61-.34 3.545-.717.912-.38 1.638-.995 2.365-1.722.727-.727 1.342-1.453 1.722-2.365.377-.935.647-1.975.717-3.545.056-1.258.072-1.668.072-4.872s-.016-3.614-.072-4.872c-.07-1.57-.34-2.61-.717-3.545-.38-.912-.995-1.638-1.722-2.365-.727-.727-1.453-1.342-2.365-1.722-.935-.377-1.975-.647-3.545-.717-1.258-.056-1.668-.072-4.872-.072zM12 6.865c-2.83 0-5.135 2.305-5.135 5.135s2.305 5.135 5.135 5.135 5.135-2.305 5.135-5.135-2.305-5.135-5.135-5.135zm0 8.528c-1.875 0-3.393-1.518-3.393-3.393s1.518-3.393 3.393-3.393 3.393 1.518 3.393 3.393-1.518 3.393-3.393 3.393zm5.35-8.528c-.808 0-1.464-.656-1.464-1.464s.656-1.464 1.464-1.464 1.464.656 1.464 1.464-.656 1.464-1.464 1.464z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://instagram.com/exterminador.co.cr" target="_blank" aria-label="Instagram">
+                    <div class="social-icon-container">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.013 4.85.07c1.47.067 2.404.296 3.23.633.91.373 1.637.986 2.364 1.713.727.727 1.34 1.454 1.713 2.364.337.826.566 1.76.633 3.23.057 1.265.07 1.645.07 4.85s-.013 3.584-.07 4.85c-.067 1.47-.296 2.404-.633 3.23-.373.91-.986 1.637-1.713 2.364-.727.727-1.454 1.34-2.364 1.713-.826.337-1.76.566-3.23.633-1.265.057-1.645.07-4.85.07s-3.584-.013-4.85-.07c-1.47-.067-2.404-.296-3.23-.633-.91-.373-1.637-.986-2.364-1.713-.727-.727-1.34-1.454-1.713-2.364-.337-.826-.566-1.76-.633-3.23-.057-1.265-.07-1.645-.07-4.85s.013-3.584.07-4.85c.067-1.47.296-2.404.633-3.23.373-.91.986-1.637 1.713-2.364.727-.727 1.454-1.34 2.364-1.713.826-.337 1.76-.566 3.23-.633 1.265-.057 1.645-.07 4.85-.07zm0-2.163c-3.204 0-3.614.016-4.872.072-1.57.07-2.61.34-3.545.717-.912.38-1.638.995-2.365 1.722-.727.727-1.342 1.453-1.722 2.365-.377.935-.647 1.975-.717 3.545-.056 1.258-.072 1.668-.072 4.872s.016 3.614.072 4.872c.07 1.57.34 2.61.717 3.545.38.912.995 1.638 1.722 2.365.727.727 1.453 1.342 2.365 1.722.935.377 1.975.647 3.545.717 1.258.056 1.668.072 4.872.072s3.614-.016 4.872-.072c1.57-.07 2.61-.34 3.545-.717.912-.38 1.638-.995 2.365-1.722.727-.727 1.342-1.453 1.722-2.365-.377-.935-.647-1.975-.717-3.545-.056-1.258-.072-1.668-.072-4.872s-.016-3.614-.072-4.872c-.07-1.57-.34-2.61-.717-3.545-.38-.912-.995-1.638-1.722-2.365-.727-.727-1.453-1.342-2.365-1.722-.935-.377-1.975-.647-3.545-.717-1.258-.056-1.668-.072-4.872-.072zM12 6.865c-2.83 0-5.135 2.305-5.135 5.135s2.305 5.135 5.135 5.135 5.135-2.305 5.135-5.135-2.305-5.135-5.135-5.135zm0 8.528c-1.875 0-3.393-1.518-3.393-3.393s1.518-3.393 3.393-3.393 3.393 1.518 3.393 3.393-1.518 3.393-3.393 3.393zm5.35-8.528c-.808 0-1.464-.656-1.464-1.464s.656-1.464 1.464-1.464 1.464.656 1.464 1.464-.656 1.464-1.464 1.464z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://www.tiktok.com/@plaguicidasxterminador" target="_blank" aria-label="TikTok">
+                    <div class="social-icon-container">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2 2.5c-.829 0-1.5-.671-1.5-1.5S11.171-.5 12 .5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
         </footer>
     </div>
 
@@ -292,4 +340,3 @@
     </a>
 </body>
 </html>
-
