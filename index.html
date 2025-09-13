@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Exterminador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --brand-orange: #FF8C00;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+        }
+        .card {
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(255, 140, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(255, 140, 0, 0.3);
+        }
+        .btn {
+            background-color: var(--brand-orange);
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #cc7000;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--brand-orange);
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #9ca3af;
+            font-weight: 400;
+        }
+        .text-orange {
+            color: var(--brand-orange);
+        }
+
+        /* Animación para el botón de chat flotante */
+        .chat-btn-glow {
+            animation: pulsate 2s infinite;
+        }
+        @keyframes pulsate {
+            0% {
+                box-shadow: 0 0 5px var(--brand-orange), 0 0 10px var(--brand-orange);
+            }
+            50% {
+                box-shadow: 0 0 15px var(--brand-orange), 0 0 30px var(--brand-orange);
+            }
+            100% {
+                box-shadow: 0 0 5px var(--brand-orange), 0 0 10px var(--brand-orange);
+            }
+        }
+    </style>
+</head>
+<body class="bg-black p-8 md:p-16 text-gray-100">
+
+    <div class="container mx-auto">
+        <header class="text-center mb-12">
+            <img src="img/logotipo-exterminador.png" alt="Logo Exterminador" class="mx-auto mb-4 w-48">
+            <h1 class="text-4xl md:text-5xl font-bold text-orange mb-2">PRODUCTOS EXTERMINADOR</h1>
+            <p class="text-xl text-gray-300">Somos la solución final para exterminar plagas.</p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center mt-8 mb-4">
+                <h2 class="text-3xl font-bold text-orange">Productos especializados para control de Cucarachas Exterminador</h2>
+                <p class="text-gray-300 mt-2">Nuestros productos son fabricados con los mejores activos, poseen gran residualidad y eficiencia garantizada,</p>
+            </div>
+
+            <h2 class="col-span-1 md:col-span-2 lg:col-span-3 text-3xl font-bold text-orange mt-4 mb-4">Productos para Cucarachas</h2>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/cucarachicida-galon-3785ml.png" alt="Cucarachicida Galón 3785 ML" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Cucarachicida Galón 3785 ML + Cebo en Jeringa 60 GRAMOS</h2>
+                    <p class="text-gray-400 mb-4">Rinde para 300 mts. Alta residualidad.</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡14.500</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/cucarachicida-galon-cebo-fumigadora.png" alt="Cucarachicida + Fumigadora" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Cucarachicida Galón 3785 ML + Cebo en Jeringa 60 GRAMOS + Fumigadora de Espalda de 16 Litros</h2>
+                    <p class="text-gray-400 mb-4">Rinde para 300 mts. Alta residualidad.</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡29.900</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/cucarachicida-botella-150ml.png" alt="Cucarachicida Botella 150 ML" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Cucarachicida Botella 150 ML</h2>
+                    <p class="text-gray-400 mb-4">Rinde para 85 mts. Extermina todo tipo de cucarachas.</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡4.900</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/cebo-en-envase-200-gramos.png" alt="Cebo en Envase 200 Gramos" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Cebo en Envase 200 Gramos</h2>
+                    <p class="text-gray-400 mb-4">Rinde para 120 mts. Biodegradable, alta residualidad.</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡10.000</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/cucarachicida-botella-cebo.png" alt="Cucarachicida Botella + Cebo" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Cucarachicida Botella 150 ML + Cebo en Jeringa 60 GRAMOS</h2>
+                    <p class="text-gray-400 mb-4">Rinde para 120 mts. Alta residualidad.</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡11.500</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/jeringa-60-gramos.png" alt="Jeringa 60 Gramos" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Jeringa 60 Gramos</h2>
+                    <p class="text-gray-400 mb-4">Rinde para 85 mts. Alta residualidad.</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡7.500</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/6-cebos-en-pasta-3-porta-cebo.png" alt="6 Cebos en Pasta + 3 Porta Cebo" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">6 Cebos en Pasta de 10 Gramos + 3 Porta Cebo</h2>
+                    <p class="text-gray-400 mb-4">6 cebos de 10g cada uno con alta residualidad. 3 meses de duración.</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡18.900</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/set-12-porta-cebos-gel.png" alt="Set de 12 Porta Cebos" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Set de 12 Porta Cebos para Veneno en Gel</h2>
+                    <p class="text-gray-400 mb-4">Alta residualidad. Para una aplicación más controlada.</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡12.000</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center mt-8 mb-4">
+                <h2 class="text-3xl font-bold text-orange">Productos especializados para control de ROEDORES Exterminador</h2>
+                <p class="text-gray-300 mt-2">Los mejores materiales para uso en interiores o exteriores, todos nuestros cebaderos incluyen un potente veneno con resultados garantizados.</p>
+            </div>
+
+            <h2 class="col-span-1 md:col-span-2 lg:col-span-3 text-3xl font-bold text-orange mt-8 mb-4">Productos para Roedores</h2>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/cebo-parafinado-rata-grande.png" alt="Cebo Parafinado Rata Grande" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Cebo Parafinado Rata Grande</h2>
+                    <p class="text-gray-400 mb-4">Pack 10 G</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡1.000</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/cebo-especial-exterminador-plus.png" alt="Cebo Especial Exterminador Plus" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Cebo Especial Exterminador Plus</h2>
+                    <p class="text-gray-400 mb-4">Pack 10 G</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡1.500</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/cebadero-raton-casero.png" alt="Cebadero Ratón Casero" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Cebadero Ratón Casero</h2>
+                    <p class="text-gray-400 mb-4">Incluye Cebo Rodenticida</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">2 x ₡15.500</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/cebadero-rata-grande.png" alt="Cebadero Rata Grande" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Cebadero Rata Grande</h2>
+                    <p class="text-gray-400 mb-4">Incluye Cebo Rodenticida</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡12.500</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <h2 class="col-span-1 md:col-span-2 lg:col-span-3 text-3xl font-bold text-orange mt-8 mb-4">Trampas</h2>
+
+            <div class="card p-6 flex flex-col justify-between">
+                <img src="img/trampa-rata-silvestre.png" alt="Trampa Rata Silvestre" class="mb-4 w-full rounded">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-100">Trampa Rata Silvestre</h2>
+                    <p class="text-gray-400 mb-4">Especial para atrapar ratas de hasta 5 kilos.</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-sm font-semibold text-gray-500">Precio:</span>
+                    <p class="price">₡14.500</p>
+                    <button class="btn w-full mt-4">Comprar Ahora</button>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="text-center mt-12 text-gray-400">
+            <a href="https://wa.me/50672234104?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20sus%20productos%20para%20el%20control%20de%20plagas." target="_blank" class="text-gray-400 hover:text-orange transition-colors duration-300">
+                <p>CONTÁCTANOS: 7223-4104</p>
+            </a>
+        </footer>
+    </div>
+
+    <a href="https://wa.chatfuel.com/Exterminador" target="_blank" class="fixed bottom-4 right-4 z-50 bg-orange text-white p-4 rounded-full shadow-lg transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-opacity-50 chat-btn-glow">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+        </svg>
+    </a>
+</body>
+</html>
